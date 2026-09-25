@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: rehabgrip-relay
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+    autoDeploy: true
